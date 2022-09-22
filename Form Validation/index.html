@@ -1,0 +1,91 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>codedamn HTML Playground</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <div id="signUpForm">
+        <form class="form1">
+            <div class="signUp">
+                <h1>Sign up</h1>
+                <div class="input-name">
+                    <input type="text" id="user-name" placeholder="User Name" onkeyup="nameCheck()">
+                    <p id="user-error"></p>
+                </div>
+
+                <div class="input-email">
+                    <input type="email" id="user-email" placeholder="Email" onkeyup="emailCheck()" >
+                </div>
+
+                <p id="email-error"></p>
+
+                <div class="input-pass">
+                    <input type="password" placeholder="Password" id="user-pass">
+                </div>
+
+                <div class="input-conpass">
+                    <input type="password" placeholder="Confirm Password" id="user-conPass" onfocusout="passError()" >
+                </div>
+
+                <p id="pass-error"></p>
+
+                <div class="forgot">
+                    <a href="#" onclick="forgotPage()">Forgot password</a>
+                </div>
+
+                <div class="sign-btn">
+                    <button type="button" >Sign In</button>
+                </div>
+
+                <div class="already">
+                    Already have an account?<a href="#" onclick="loginPage()">Log In</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    
+    <div id="forgotPassword">
+        <form class="from2">
+            <div class="forgot-password">
+                <h2>Password Reset</h2>
+                <div>You will receive instruction for reseting password</div>
+
+                <input class="form2_input" type="email" placeholder="Type your Email Address">
+
+                <button class="from2_btn" type="submit">Send</button>
+
+            </div>
+        </form>
+    </div>
+
+    <div id="loginform">
+        <form class="form3">
+            <div class="login-page">
+                <h3 class="login-title">Log In</h3>
+                <div class="login-name">
+                    <input type="email" placeholder="Email ID">
+                </div>
+                <div class="login-email">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="login-btn">
+                    <button type="submit">Log In</button>
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
+
+
+
+    <script src="https://bit.ly/codedamn-web-console"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
